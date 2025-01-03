@@ -1,37 +1,36 @@
-## Added .bat file to use with Windows Task Scheduler
+Forked from https://github.com/Shogun89/fancy_job to make a Windows version
 
 # Shogun89's Daily Number Incrementer
 
-A simple Python script that automatically increments a number in a text file and commits the change to git. Perfect for maintaining a daily commit streak or tracking sequential values.
+A simple Python script that automatically increments a number in a text file,  commits the change to git and then pushes them. Perfect for maintaining a daily commit streak or tracking sequential values.
 
-## Setup
+## Windows Setup
 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/Shogun89/fancy_job
-cd fancy_job
+git clone https://github.com/shootweb/fancy_job
 ```
 
-2. Run the script:
+2. Set a new daily task in Task Scheduler:
 
-```bash
-python update_number.py
-```
+> Open Task Scheduler
+> 
+> Go to Action -> Create Basic Task...
+> 
+> Set a Name -> Next
+> 
+> Set Trigger: "When I log on" or "When the Computer Starts" -> Next
+> 
+> Set Action: Start a Program -> Next
+> 
+> Click Browse... -> Select start.bat from the cloned directory
+>
+> Click Finish
+> 
+> Done!
 
-3. Setup a cron job to run the script daily:
-
-```bash
-crontab -e
-```
-
-Add the following line to the crontab file:
-
-```bash
-0 6 * * * cd /path/to/your/repo && python update_number.py
-```
-
-This will run the script at 6am every day.
+This will run the script every time you log in as your user or when computer starts up (depending on the set trigger from step 2).
 
 ## Usage
 
