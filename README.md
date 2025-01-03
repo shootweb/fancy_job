@@ -1,4 +1,4 @@
-Forked from https://github.com/Shogun89/fancy_job to make a Windows version
+Forked from https://github.com/Shogun89/fancy_job to make a Windows version.
 
 # Shogun89's Daily Number Incrementer
 
@@ -14,19 +14,19 @@ git clone https://github.com/shootweb/fancy_job
 
 2. Set a new daily task in Task Scheduler:
 
-> Open Task Scheduler
+> Open Task Scheduler.
 > 
 > Go to Action -> Create Basic Task...
 > 
-> Set a Name -> Next
+> Set a Name -> Next.
 > 
-> Set Trigger: "When I log on" or "When the Computer Starts" -> Next
+> Set Trigger: "When I log on" or "When the Computer Starts" -> Next.
 > 
-> Set Action: Start a Program -> Next
+> Set Action: Start a Program -> Next.
 > 
-> Click Browse... -> Select start.bat from the cloned directory
+> Click Browse... -> Select start.bat from the cloned directory.
 >
-> Click Finish
+> Click Finish.
 > 
 > Done!
 
